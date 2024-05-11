@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="black" border-color="silver" display="contents"/>
+        <nomargin margin="0" padding="0" border="0"/>
+        <group margin="5" padding="5" border="2" flex-direction="column"/>
+        <transparent background-color="transparentblack"/>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" resizable="0" resize-corner="0" background-image="background_png"
+        width="572" height="329" display="contents">
+    <Slider slider-textbox="no-textbox" filmstrip="pinkKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="osc1Waveform" pos-x="25" pos-y="120"
+            pos-width="60" pos-height="60" background-color="00000000" id="osc1waveform"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="pinkKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="subOscLevel" pos-x="94" pos-y="120"
+            pos-width="60" pos-height="60" background-color="00000000" id="subosc"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="pinkKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="oscMix" pos-x="160" pos-y="120"
+            pos-width="60" pos-height="60" background-color="00000000" id="mix"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="yellowKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="osc2Waveform" pos-x="25" pos-y="219"
+            pos-width="60" pos-height="60" background-color="00000000" id="osc2waveform"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="yellowKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="osc2Octave" pos-x="94" pos-y="219"
+            pos-width="60" pos-height="60" background-color="00000000" id="octave"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="yellowKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="osc2Pitch" pos-x="160" pos-y="219"
+            pos-width="60" pos-height="60" background-color="00000000" id="pitch"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="blueKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="cutoff" pos-x="273" pos-y="25"
+            pos-width="60" pos-height="60" background-color="00000000" id="cutoff"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="blueKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="resonance" pos-x="338" pos-y="25"
+            pos-width="60" pos-height="60" background-color="00000000" id="resonance"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="blueKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="ampEnvCutoff" pos-x="404" pos-y="25"
+            pos-width="60" pos-height="60" background-color="00000000" id="env"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="redKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="Gain" pos-x="470" pos-y="25" pos-width="60"
+            pos-height="60" background-color="00000000" id="master" class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="orangeKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="ampEnvAttack" pos-x="273" pos-y="120"
+            pos-width="60" pos-height="60" background-color="00000000" id="attack"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="orangeKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="ampEnvDecay" pos-x="338" pos-y="120"
+            pos-width="60" pos-height="60" background-color="00000000" id="decay"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="orangeKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="ampEnvSustain" pos-x="404" pos-y="120"
+            pos-width="60" pos-height="60" background-color="00000000" id="sustain"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="orangeKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="ampEnvRelease" pos-x="470" pos-y="120"
+            pos-width="60" pos-height="60" background-color="00000000" id="release"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="greenKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="lfoRate" pos-x="273" pos-y="219"
+            pos-width="60" pos-height="60" background-color="00000000" id="Rate"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="greenKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="lfoWaveform" pos-x="338" pos-y="219"
+            pos-width="60" pos-height="60" background-color="00000000" id="lfoWaveform"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="greenKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="lfoPitch" pos-x="404" pos-y="219"
+            pos-width="60" pos-height="60" background-color="00000000" id="pitchmod"
+            class="nomargin"/>
+    <Slider slider-textbox="no-textbox" filmstrip="greenKnob_png" num-filmstrip-images="128"
+            width="" height="" parameter="lfoCutoff" pos-x="470" pos-y="219"
+            pos-width="60" pos-height="60" background-color="00000000" id="lfoCutoff"
+            class="nomargin"/>
+  </View>
+</magic>

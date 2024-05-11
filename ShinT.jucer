@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="uiF1Tw" name="ShinT" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginManufacturer="Mike Moreno DSP">
+  <MAINGROUP id="ccEnKc" name="ShinT">
+    <GROUP id="{DABDFC9C-D1BA-ACCD-90BB-F0DB2436B51B}" name="Source">
+      <FILE id="eQHYwM" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="L9gNvf" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="yx7rTi" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Yf84V8" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="ucSvQ0" name="SynthVoice.cpp" compile="1" resource="0" file="Source/SynthVoice.cpp"/>
+      <FILE id="YG0egV" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+      <FILE id="SMywiv" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+      <FILE id="PBtyKh" name="magic.xml" compile="0" resource="1" file="Source/magic.xml"/>
+    </GROUP>
+    <GROUP id="{57BAE718-6D9E-787B-2F01-40FE29BA420B}" name="DSP">
+      <FILE id="spnheJ" name="adsr.cpp" compile="1" resource="0" file="Source/DSP/adsr.cpp"/>
+      <FILE id="tGof7E" name="adsr.h" compile="0" resource="0" file="Source/DSP/adsr.h"/>
+      <FILE id="n9CVym" name="dsp.h" compile="0" resource="0" file="Source/DSP/dsp.h"/>
+      <FILE id="mlq1WN" name="ladder.cpp" compile="1" resource="0" file="Source/DSP/ladder.cpp"/>
+      <FILE id="rv261u" name="ladder.h" compile="0" resource="0" file="Source/DSP/ladder.h"/>
+      <FILE id="zlf9QK" name="oscillator.cpp" compile="1" resource="0" file="Source/DSP/oscillator.cpp"/>
+      <FILE id="mrJ4IF" name="oscillator.h" compile="0" resource="0" file="Source/DSP/oscillator.h"/>
+      <FILE id="GNfeKt" name="svf.cpp" compile="1" resource="0" file="Source/DSP/svf.cpp"/>
+      <FILE id="m24vFY" name="svf.h" compile="0" resource="0" file="Source/DSP/svf.h"/>
+    </GROUP>
+    <GROUP id="{2B8006BA-6FFA-7644-3546-08953EA4D711}" name="Assets">
+      <FILE id="ObKmbD" name="background.png" compile="0" resource="1" file="Source/Assets/background.png"/>
+      <FILE id="apzbxP" name="pinkKnob.png" compile="0" resource="1" file="Source/Assets/pinkKnob.png"/>
+      <FILE id="TDdw7O" name="redKnob.png" compile="0" resource="1" file="Source/Assets/redKnob.png"/>
+      <FILE id="CpDRoW" name="yellowKnob.png" compile="0" resource="1" file="Source/Assets/yellowKnob.png"/>
+      <FILE id="fyMpw0" name="blueKnob.png" compile="0" resource="1" file="Source/Assets/blueKnob.png"/>
+      <FILE id="i5akv1" name="greenKnob.png" compile="0" resource="1" file="Source/Assets/greenKnob.png"/>
+      <FILE id="ZvjFmv" name="orangeKnob.png" compile="0" resource="1" file="Source/Assets/orangeKnob.png"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="foleys_gui_magic" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
+               FOLEYS_ENABLE_BINARY_DATA="1" FOLEYS_SHOW_GUI_EDITOR_PALLETTE="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="ShinT"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="ShinT"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../SDK/JUCE/modules"/>
+        <MODULEPATH id="foleys_gui_magic" path="../../../../../../Local-DAC/foleys_gui_magic-main/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../../Documents/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" enablePluginBinaryCopyStep="1" vst3BinaryLocation="C:\Program Files\Common Files\VST3"/>
+        <CONFIGURATION isDebug="0" name="Release" enablePluginBinaryCopyStep="1" vst3BinaryLocation="C:\Program Files\Common Files\VST3"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="/Users/jsvaldezv/Documents/SDK/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../SDK/JUCE/modules"/>
+        <MODULEPATH id="foleys_gui_magic" path="..\..\..\..\..\Local-DAC\foleys_gui_magic-main\modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../../Documents/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
